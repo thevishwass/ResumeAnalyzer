@@ -13,7 +13,7 @@ A smart tool that analyzes resumes against job descriptions, highlighting skill 
 - ✅ FastAPI backend powered by Python and NLP tools  
 - ✅ Easy to set up and run locally  
 
----
+
 
 ## 🛠 Tech Stack
 
@@ -22,7 +22,6 @@ A smart tool that analyzes resumes against job descriptions, highlighting skill 
 - **NLP:** Regex and Python libraries  
 - **Development Tools:** VS Code, Git, Python, Node.js  
 
----
 
 ## 🚀 Installation & Setup
 

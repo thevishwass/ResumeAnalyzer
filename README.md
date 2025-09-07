@@ -6,11 +6,12 @@ A smart tool that analyzes resumes against job descriptions, highlighting skill 
 ## ✨ Features
 
 - ✅ Automatically compare resumes with job descriptions  
-- ✅ Generate a suitability score based on skill matching  
+- ✅ Generates an ATS score based on skill matching
 - ✅ Highlight missing skills and areas for improvement  
+- ✅ Mask private information such as phone numbers and email addresses
 - ✅ Interactive Next.js frontend with real-time feedback  
-- ✅ FastAPI backend powered by Python and NLP tools  
-- ✅ Easy to set up and run locally  
+- ✅ FastAPI backend that securely sends data to the Gemini API for processing  
+- ✅ Easy to set up and run
 
 
 

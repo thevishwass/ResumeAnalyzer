@@ -57,11 +57,14 @@ pip install -r requirements.txt
 # Run the FastAPI server
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
+# The backend server will be available at http://localhost:8000
+
+
 # Don't forget to make .env file, without this it wont work
-# Example: GEMINIAPIKEY = Abcdefghijkl1234567890_
+# Set .env like this only: GEMINIAPIKEY = Abcdefghijkl1234567890_
+
 # For API Key, go to https://aistudio.google.com/apikey
 
-# The backend server will be available at http://localhost:8000
 ```
 
 

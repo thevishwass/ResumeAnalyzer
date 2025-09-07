@@ -6,9 +6,9 @@ A smart tool that analyzes resumes against job descriptions, highlighting skill 
 ## ✨ Features
 
 - ✅ Automatically compare resumes with job descriptions  
+- ✅ MASKED private information such as phone numbers and email addresses
 - ✅ Generates an ATS score based on skill matching
 - ✅ Highlight missing skills and areas for improvement  
-- ✅ Mask private information such as phone numbers and email addresses
 - ✅ Interactive Next.js frontend with real-time feedback  
 - ✅ FastAPI backend that securely sends data to the Gemini API for processing  
 - ✅ Easy to set up and run
@@ -62,6 +62,7 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 # Don't forget to make .env file, without this it wont work
 # Set .env like this only: GEMINIAPIKEY = Abcdefghijkl1234567890_
+# Users email address and phone number in resume are never sent outside; they are securely masked before processing.
 
 # For API Key, go to https://aistudio.google.com/apikey
 

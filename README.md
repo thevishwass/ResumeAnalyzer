@@ -57,8 +57,9 @@ pip install -r requirements.txt
 # Run the FastAPI server
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
-# dont forget to make .env file
+# Don't forget to make .env file, without this it wont work
 # Example: GEMINIAPIKEY = Abcdefghijkl1234567890_
+# For API Key, go to https://aistudio.google.com/apikey
 
 # The backend server will be available at http://localhost:8000
 ```
@@ -78,11 +79,6 @@ npm run dev
 
 # The frontend will be available at http://localhost:3000
 
-
-# Run the Next.js development server
-npm run dev
-
-# The frontend will be available at http://localhost:3000
 ```
 
 

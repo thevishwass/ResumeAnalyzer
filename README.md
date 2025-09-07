@@ -2,7 +2,6 @@
 
 A smart tool that analyzes resumes against job descriptions, highlighting skill matches, missing skills, and overall suitability. It helps job seekers optimize their resumes and tailor them to specific roles by providing actionable insights using natural language processing.
 
----
 
 ## ✨ Features
 

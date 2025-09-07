@@ -36,6 +36,30 @@ Make sure you have the following installed:
 
 
 
+### 🟠 Setup Backend
+
+``` python
+
+cd backend
+
+# Create and activate a virtual environment
+python -m venv venv
+.\venv\Scripts\activate      # Windows
+# source venv/bin/activate   # Linux/Mac
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the FastAPI server
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
+
+# dont forget to make .env file
+# Example: GEMINIAPIKEY = Abcdefghijkl1234567890_
+
+# The backend server will be available at http://localhost:8000
+```
+
+
 ### 🟢 Setup Frontend
 
 ``` javascript
@@ -62,25 +86,6 @@ npm run dev
 
 
 
-### 🟠 Setup Backend
-
-``` python
-
-cd backend
-
-# Create and activate a virtual environment
-python -m venv venv
-.\venv\Scripts\activate      # Windows
-# source venv/bin/activate   # Linux/Mac
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the FastAPI server
-uvicorn main:app --reload --host 0.0.0.0 --port 8000
-
-# The backend server will be available at http://localhost:8000
-```
 
 ### 📂 Folder Structure
 ```bash

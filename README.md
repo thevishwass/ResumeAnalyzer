@@ -6,9 +6,9 @@ A smart tool that analyzes resumes against job descriptions, highlighting skill 
 
 ## ✨ Features
 
-- ✅ Compare resumes with job descriptions automatically  
+- ✅ Automatically compare resumes with job descriptions  
 - ✅ Generate a suitability score based on skill matching  
-- ✅ Highlight missing skills and improvement areas  
+- ✅ Highlight missing skills and areas for improvement  
 - ✅ Interactive Next.js frontend with real-time feedback  
 - ✅ FastAPI backend powered by Python and NLP tools  
 - ✅ Easy to set up and run locally  
@@ -20,7 +20,7 @@ A smart tool that analyzes resumes against job descriptions, highlighting skill 
 - **Frontend:** Next.js (React)  
 - **Backend:** FastAPI (Python)  
 - **NLP:** Regex and Python libraries  
-- **Development:** VS Code, Git, Python, Node.js  
+- **Development Tools:** VS Code, Git, Python, Node.js  
 
 ---
 
@@ -28,7 +28,7 @@ A smart tool that analyzes resumes against job descriptions, highlighting skill 
 
 ### ✅ Prerequisites
 
-Make sure you have installed:
+Make sure you have the following installed:
 
 - Python 3.8 or later  
 - Node.js 14 or later  
@@ -37,14 +37,19 @@ Make sure you have installed:
 
 ---
 
-### 🔽 Clone the Repository
+### 🟠🟢 Setup Backend & Frontend
 
 ```bash
+# Clone the repository
 git clone https://github.com/thevishwass/ResumeAnalyzer.git
 cd ResumeAnalyzer
+
+# ----------------------------
+# Setup Backend
+# ----------------------------
 cd backend
 
-# Create and activate virtual environment
+# Create and activate a virtual environment
 python -m venv venv
 .\venv\Scripts\activate      # Windows
 # source venv/bin/activate   # Linux/Mac
@@ -55,6 +60,13 @@ pip install -r requirements.txt
 # Run the FastAPI server
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
+# The backend server will be available at http://localhost:8000
+
+# ----------------------------
+# Setup Frontend
+# ----------------------------
+# Open a new terminal and run:
+
 cd ../frontend
 
 # Install dependencies
@@ -63,43 +75,4 @@ npm install
 # Run the Next.js development server
 npm run dev
 
-
-ResumeAnalyzer/
-├── backend/            # FastAPI server logic
-├── frontend/           # Next.js frontend components
-├── README.md           # Project documentation
-
-
-
-
-📌 How to Use
-
-Upload or paste your resume and job description in the frontend.
-
-View the analysis results highlighting matched and missing skills.
-
-Get suggestions to improve your resume for specific job roles.
-
-Iterate and optimize your resume for better job applications.
-
-🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Fork the project
-
-Create a feature branch (git checkout -b feature-name)
-
-Commit your changes (git commit -m "Add new feature")
-
-Push to your branch (git push origin feature-name)
-
-Open a pull request
-
-📜 License
-
-This project is open-source and available under the MIT License.
-
-📬 Contact
-
-Feel free to reach out via GitHub issues or pull requests for feedback, suggestions, or collaborations.
+# The frontend will be available at http://localhost:3000

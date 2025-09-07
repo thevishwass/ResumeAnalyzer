@@ -39,6 +39,10 @@ Make sure you have the following installed:
 ### 🟠 Setup Backend
 
 ``` python
+# Clone the repository
+git clone https://github.com/thevishwass/ResumeAnalyzer.git
+cd ResumeAnalyzer
+
 
 cd backend
 
@@ -63,9 +67,6 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ### 🟢 Setup Frontend
 
 ``` javascript
-# Clone the repository
-git clone https://github.com/thevishwass/ResumeAnalyzer.git
-cd ResumeAnalyzer
 
 cd ../frontend
 

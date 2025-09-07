@@ -45,6 +45,13 @@ export default function AnalysisResult({ resumeText, jobDescription }) {
         <div className="analysis-content">
           <p><strong>Score:</strong> <span className="score">{llmData.score ?? "N/A"}</span></p>
 
+          {/* <p><strong>Skills:</strong></p>
+          {llmData.skills?.length ? (
+            <ul className="skills-list">
+              {llmData.skills.map((s, i) => <li key={i}>{s}</li>)}
+            </ul>
+          ) : <p className="none-text">None</p>} */}
+          
           <p><strong>Missing Skills:</strong></p>
           {llmData.missing_skills?.length ? (
             <ul className="skills-list">

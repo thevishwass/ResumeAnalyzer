@@ -19,32 +19,34 @@ export default function ResumeUpload({ onResumeParsed }) {
   };
 
   const handleAnalyze = async () => {
-    if (!file) return alert("Please choose a file first");
-    if (!jobDescription.trim()) return alert("Please enter a job description");
+  if (!file) return alert("Please choose a file first");
+  if (!jobDescription.trim()) return alert("Please enter a job description");
 
-    setLoading(true);
-    const formData = new FormData();
-    formData.append("file", file);
+  setLoading(true);
+  const formData = new FormData();
+  formData.append("file", file);
 
-    try {
-      const res = await fetch("http://localhost:8000/uploadResume/", {
-        method: "POST",
-        body: formData,
-      });
+  try {
+    const res = await fetch("http://localhost:8000/uploadResume/", {
+      method: "POST",
+      body: formData, // multipart/form-data
+    });
 
-      if (!res.ok) throw new Error("Upload failed");
+    if (!res.ok) throw new Error("Upload failed");
 
-      const data = await res.json();
-      onResumeParsed({
-        resume_text: data.parsed.full_text,
-        job_description: jobDescription, // pass the job description too
-      });
-    } catch (err) {
-      alert(err.message);
-    } finally {
-      setLoading(false);
-    }
-  };
+    const data = await res.json();
+
+    onResumeParsed({
+      resume_text: data.parsed.fullMaskedText, // <-- corrected
+      job_description: jobDescription,
+    });
+  } catch (err) {
+    alert(err.message);
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   return (
     <div className="upload-card">

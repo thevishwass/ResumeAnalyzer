@@ -463,7 +463,7 @@ a:hover::after {
 }
 
 .analysis-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-1px);
   box-shadow: var(--shadow-xl);
 }
 

@@ -4,12 +4,18 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 import os
 from google import genai
+import os
 from dotenv import load_dotenv
+from google import genai
 
-load_dotenv()
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), "../.env"))
 
 api_key = os.getenv("GEMINIAPIKEY")
+if not api_key:
+    raise ValueError("GEMINIAPIKEY is not set. Check your .env file.")
+
 client = genai.Client(api_key=api_key)
+
 
 router = APIRouter(prefix="/gemini", tags=["Gemini LLM"])
 
@@ -19,23 +25,33 @@ class LLMRequest(BaseModel):
 
 @router.post("/analyze_llm")
 async def analyze_llm(req: LLMRequest):
+
     prompt = f"""
-    Resume Text:
-    {req.resume_text}
+Extract all skills from the resume and job description, normalizing variations 
+(e.g., ReactJS, React.js → React).
 
-    Job Description:
-    {req.job_description}
+Resume:
+{req.resume_text}
 
-    Analyze the resume for this job and provide a JSON response like this:
-    {{
-      "score": 0,
-      "missing_skills": [],
-      "suggestions": []
-    }}
-    """
+Job Description:
+{req.job_description}
+
+Compare skills from the resume against the job description and calculate a match score:
+- score = (number of matching skills / total skills required in job description) * 100
+- Round score to nearest integer
+
+Return JSON like this:
+{{
+    "score": int,  # percentage of job-required skills present in resume
+    "missing_skills": [list of skills present in job description but missing in resume],
+    "suggestions": [short actionable points to improve resume]
+}}
+"""
+
+
 
     try:
-        # Call the LLM
+        # Call Gemini LLM
         response = client.models.generate_content(
             model="gemini-2.5-flash",
             contents=prompt
@@ -55,15 +71,13 @@ async def analyze_llm(req: LLMRequest):
             if json_match:
                 result = json.loads(json_match.group())
 
-        # Ensure keys exist and have correct types
-        result.setdefault("score", 0)
+        # Ensure keys exist
+        result.setdefault("score", [])
+        # result.setdefault("skills", [])
         result.setdefault("missing_skills", [])
         result.setdefault("suggestions", [])
 
-        # Always return plain JSON (not wrapped in {"result": ...})
-        # return result
-        return {"result": result}  # <- important
-
+        return {"result": result}
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"LLM analysis failed: {str(e)}")

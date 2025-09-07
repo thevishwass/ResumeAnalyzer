@@ -34,11 +34,33 @@ Make sure you have the following installed:
 - Git  
 - VS Code (optional but recommended)
 
----
 
-### 🟠🟢 Setup Backend & Frontend
 
-```bash
+### 🟢 Setup Frontend
+
+``` javascript
+cd ../frontend
+
+# Install dependencies
+npm install
+
+# Run the Next.js development server
+npm run dev
+
+# The frontend will be available at http://localhost:3000
+
+
+# Run the Next.js development server
+npm run dev
+
+# The frontend will be available at http://localhost:3000
+```
+
+
+
+### 🟠 Setup Backend
+
+``` python
 # Clone the repository
 git clone https://github.com/thevishwass/ResumeAnalyzer.git
 cd ResumeAnalyzer
@@ -60,18 +82,24 @@ pip install -r requirements.txt
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 # The backend server will be available at http://localhost:8000
+```
 
-# ----------------------------
-# Setup Frontend
-# ----------------------------
-# Open a new terminal and run:
+### 📂 Folder Structure
+```bash
+ResumeAnalyzer/
+├── backend/            # FastAPI server logic
+├── frontend/           # Next.js frontend components
+├── README.md           # Project documentation
+```
 
-cd ../frontend
+### 📌 How It Works
 
-# Install dependencies
-npm install
+- Users upload or paste their resume and job description in the frontend.
+- The backend masks sensitive information like phone numbers and email addresses.
+- The sanitized data is securely sent to the Gemini API for analysis.
+- Gemini API returns a suitability score, matched skills, missing skills, and suggestions.
+- The frontend displays the results in real time for users to improve their resume.
 
-# Run the Next.js development server
-npm run dev
+### 📬 Contact
 
-# The frontend will be available at http://localhost:3000
+Feel free to open an issue or submit a pull request for feedback, suggestions, or collaborations.

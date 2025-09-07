@@ -39,6 +39,10 @@ Make sure you have the following installed:
 ### 🟢 Setup Frontend
 
 ``` javascript
+# Clone the repository
+git clone https://github.com/thevishwass/ResumeAnalyzer.git
+cd ResumeAnalyzer
+
 cd ../frontend
 
 # Install dependencies
@@ -61,13 +65,7 @@ npm run dev
 ### 🟠 Setup Backend
 
 ``` python
-# Clone the repository
-git clone https://github.com/thevishwass/ResumeAnalyzer.git
-cd ResumeAnalyzer
 
-# ----------------------------
-# Setup Backend
-# ----------------------------
 cd backend
 
 # Create and activate a virtual environment

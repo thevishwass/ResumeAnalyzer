@@ -3,6 +3,8 @@ uvicorn
 pydantic
 sqlalchemy
 python-multipart
-jose
-passlib[bcrypt]
 pdfkit
+pdfplumber
+docx2txt
+email_validator
+google-generativeai

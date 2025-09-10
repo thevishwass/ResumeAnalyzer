@@ -1,10 +1,6 @@
-fastapi
-uvicorn
-pydantic
-sqlalchemy
 python-multipart
 pdfkit
 pdfplumber
 docx2txt
 email_validator
-google-generativeai
+openai

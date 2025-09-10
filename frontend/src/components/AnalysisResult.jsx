@@ -15,7 +15,7 @@ export default function AnalysisResult({ resumeText, jobDescription }) {
       setLlmData(null);
 
       try {
-        const res = await fetch("http://localhost:8000/gemini/analyze_llm", {
+        const res = await fetch("http://localhost:8000/gpt/analyze_llm", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ resume_text: resumeText, job_description: jobDescription }),

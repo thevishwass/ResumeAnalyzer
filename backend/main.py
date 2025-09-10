@@ -8,7 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 # Relative imports (no 'backend.' prefix)
 from routes.upload import router as upload_router
-from routes.gemini_analyze import router as gemini_router
+from routes.gpt_analyze import router as gpt_router
 
 
 app = FastAPI()
@@ -24,5 +24,5 @@ app.add_middleware(
 
 # Include routers
 app.include_router(upload_router)
-app.include_router(gemini_router) 
+app.include_router(gpt_router) 
 

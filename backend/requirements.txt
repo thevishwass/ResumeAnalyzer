@@ -4,3 +4,5 @@ pdfplumber
 docx2txt
 email_validator
 openai
+fastapi
+dotenv

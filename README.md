@@ -58,15 +58,16 @@ pip install -r requirements.txt
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 # The backend server will be available at http://localhost:8000
+```
+
 
 
 # Don't forget to make .env file, without this it wont work
-# Set .env like this only: GEMINIAPIKEY = Abcdefghijkl1234567890_
+# Set .env like this only: GPTAPIKEY = Abcdefghijkl1234567890_
 # Users email address and phone number in resume are never sent outside; they are securely masked before processing.
 
-# For API Key, go to https://aistudio.google.com/apikey
+# For API Key, go to https://openrouter.ai/
 
-```
 
 
 ### 🟢 Setup Frontend

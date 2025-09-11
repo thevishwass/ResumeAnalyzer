@@ -10,7 +10,7 @@ A smart tool that analyzes resumes against job descriptions, highlighting skill 
 - ✅ Generates an ATS score based on skill matching
 - ✅ Highlight missing skills and areas for improvement  
 - ✅ Interactive Next.js frontend with real-time feedback  
-- ✅ FastAPI backend that securely sends data to the Gemini API for processing  
+- ✅ FastAPI backend that securely sends data to the ChatGPT API for processing  
 - ✅ Easy to set up and run
 
 
@@ -63,7 +63,7 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 
 - Don't forget to make .env file, without this it wont work
-- Set .env like this only: GPTAPIKEY = Abcdefghijkl1234567890_
+- Set .env like this only: (EXAMPLE) --> OPENROUTER_API_KEY = Abcdefghijkl1234567890_
 - Users email address and phone number in resume are never sent outside; they are securely masked before processing.
 
 - For API Key, go to https://openrouter.ai/
@@ -101,8 +101,8 @@ ResumeAnalyzer/
 
 - Users upload or paste their resume and job description in the frontend.
 - The backend masks sensitive information like phone numbers and email addresses.
-- The sanitized data is securely sent to the Gemini API for analysis.
-- Gemini API returns a suitability score, matched skills, missing skills, and suggestions.
+- The sanitized data is securely sent to the ChatGPT API for analysis.
+- ChatGPT API returns a suitability score, matched skills, missing skills, and suggestions.
 - The frontend displays the results in real time for users to improve their resume.
 
 ### 📬 Contact

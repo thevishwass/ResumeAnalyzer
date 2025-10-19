@@ -1,17 +1,17 @@
-# 📄 Resume Analyzer
+# Resume Analyzer
 
 A smart tool that analyzes resumes against job descriptions, highlighting skill matches, missing skills, and overall suitability. It helps job seekers optimize their resumes and tailor them to specific roles by providing actionable insights using natural language processing.
 
 
 ## ✨ Features
 
-- ✅ Automatically compare resumes with job descriptions  
-- ✅ MASKED private information such as phone numbers and email addresses
-- ✅ Generates an ATS score based on skill matching
-- ✅ Highlight missing skills and areas for improvement  
-- ✅ Interactive Next.js frontend with real-time feedback  
-- ✅ FastAPI backend that securely sends data to the ChatGPT API for processing  
-- ✅ Easy to set up and run
+- Automatically compare resumes with job descriptions  
+- MASKED private information such as phone numbers and email addresses
+- Generates an ATS score based on skill matching
+- Highlight missing skills and areas for improvement  
+- Interactive Next.js frontend with real-time feedback  
+- FastAPI backend that securely sends data to the ChatGPT API for processing  
+- Easy to set up and run
 
 
 

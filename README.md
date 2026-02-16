@@ -268,42 +268,6 @@ If this project helped you, please consider giving it a ⭐ on GitHub!
 
 ---
 
-## 💡 Pro Tips to Make This Portfolio-Grade
-
-### 🔥 **Essential Additions:**
-
-1. **Add Screenshots/Demo**
-   ```markdown
-   ## 📸 Screenshots
-   
-   ### Dashboard
-   ![Dashboard](./screenshots/dashboard.png)
-   
-   ### Analysis Results
-   ![Results](./screenshots/results.png)
-   ```
-
-2. **Add Architecture Diagram**
-   ```markdown
-   ## 🏗️ Architecture
-   
-   ![Architecture](./docs/architecture.png)
-   ```
-
-3. **Add Demo GIF**
-   ```markdown
-   ## 🎥 Demo
-   
-   ![Demo](./demo.gif)
-   ```
-
-4. **Deploy & Add Live Link**
-   ```markdown
-   ## 🌐 Live Demo
-   
-   [Try it live!](https://resume-analyzer-demo.vercel.app)
-   ```
-
 ### 🚀 **Deployment Suggestions:**
 
 - **Frontend:** Deploy on [Vercel](https://vercel.com) (free, perfect for Next.js)
@@ -314,8 +278,8 @@ If this project helped you, please consider giving it a ⭐ on GitHub!
 
 <div align="center">
 
-**Made with ❤️ by [@thevishwass](https://github.com/thevishwass)**
+**Made by [@thevishwass](https://github.com/thevishwass)**
 
-[⬆ Back to Top](#resume-analyzer-)
+[Back to Top](#resume-analyzer)
 
 </div>

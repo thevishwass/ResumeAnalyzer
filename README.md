@@ -257,8 +257,7 @@ Found a bug or have a suggestion? [Open an issue](https://github.com/thevishwass
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
+Free to use & Open Source, updates are accepted!
 ---
 
 ## ⭐ Show Your Support
@@ -278,7 +277,5 @@ If this project helped you, please consider giving it a ⭐ on GitHub!
 <div align="center">
 
 **Made by [@thevishwass](https://github.com/thevishwass)**
-
-[Back to Top](#ResumeAnalyzer)
 
 </div>

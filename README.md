@@ -279,6 +279,6 @@ If this project helped you, please consider giving it a ⭐ on GitHub!
 
 **Made by [@thevishwass](https://github.com/thevishwass)**
 
-[Back to Top](#resume-analyzer)
+[Back to Top](#ResumeAnalyzer)
 
 </div>

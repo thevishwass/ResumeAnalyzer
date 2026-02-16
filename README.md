@@ -245,7 +245,7 @@ Contributions make the open-source community an amazing place to learn and creat
 
 Found a bug or have a suggestion? [Open an issue](https://github.com/thevishwass/ResumeAnalyzer/issues)
 
----
+
 
 ## 📬 Contact & Support
 
@@ -253,18 +253,18 @@ Found a bug or have a suggestion? [Open an issue](https://github.com/thevishwass
 - **Issues:** [Report a bug](https://github.com/thevishwass/ResumeAnalyzer/issues)
 - **Discussions:** [Join the conversation](https://github.com/thevishwass/ResumeAnalyzer/discussions)
 
----
+
 
 ## 📄 License
 
 Free to use & Open Source, updates are accepted!
----
+
 
 ## ⭐ Show Your Support
 
 If this project helped you, please consider giving it a ⭐ on GitHub!
 
----
+
 
 ### 🚀 **Deployment Suggestions:**
 
